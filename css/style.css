@@ -1,0 +1,68 @@
+.clearfix::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container{
+  width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+body{
+  background: url("../img/page-bg.jpg") no-repeat 50% 3px;
+  /*color: white;*/
+}
+
+.main-header{
+  margin-bottom: 60px;
+}
+
+.main-header .main-navigator{
+  float: left;
+  width: 780px;
+}
+
+.main-header .user-block{
+  float: right;
+  width: 140px;
+  /*padding: 20px 30px;*/
+}
+
+.index-logo{
+  height: 204px;
+  width: 368px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.features{
+  margin-bottom: 80px;
+  color: white;
+}
+
+.features .features-item{
+  width: 300px;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.features .features-item:last-child{
+  margin-right: 0;
+}
+
+.index-content{
+  background: url("../img/index-content-bg.jpg") repeat;
+  padding: 50px 80px;
+}
+
+.index-content-left{
+  float: left;
+  width: 330px;
+}
+
+.index-content-right{
+  float: right;
+  width: 330px;
+}

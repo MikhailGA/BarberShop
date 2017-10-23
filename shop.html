@@ -33,53 +33,79 @@
     </ul>
   </header>
   <div class="item-sorting">
-    <p>Производители</p>
-    <form action="#" class="manufacturer-select" method="post">
-      <p><input type="checkbox" name="manufacturer-1" value="1" checked>Baxter of California</p>
-      <p><input type="checkbox" name="manufacturer-2" value="2">Mr Natty</p>
-      <p><input type="checkbox" name="manufacturer-3" value="3" checked>Suavecito</p>
-      <p><input type="checkbox" name="manufacturer-4" value="4">Malin+Goetz</p>
-      <p><input type="checkbox" name="manufacturer-5" value="5">Murray’s</p>
-      <p><input type="checkbox" name="manufacturer-6" value="6" checked>American Crew</p>
-    </form>
-    <p>Группы товаров</p>
     <form action="#" class="Product_groups" method="post">
-      <p><input type="radio" name="groups-1" value="1">Бритвенные <br> принадлежности</p>
-      <p><input type="radio" name="groups-2" value="2" checked>средства для ухода</p>
-      <p><input type="radio" name="groups-3" value="3">Аксессуары</p>
+      <fieldset class="manufacturer-select">
+        <legend>Производители</legend>
+        <label><input type="checkbox" name="manufacturer-1" value="1" checked>Baxter of California</label>
+        <label><input type="checkbox" name="manufacturer-2" value="2">Mr Natty</label>
+        <label><input type="checkbox" name="manufacturer-3" value="3" checked>Suavecito</label>
+        <label><input type="checkbox" name="manufacturer-4" value="4">Malin+Goetz</label>
+        <label><input type="checkbox" name="manufacturer-5" value="5">Murray’s</label>
+        <label><input type="checkbox" name="manufacturer-6" value="6" checked>American Crew</label>
+      </fieldset>
+      <fieldset class="Product_groups">
+        <legend>Группы товаров</legend>
+        <label><input type="radio" name="groups" value="1">Бритвенные <br> принадлежности</label>
+        <label><input type="radio" name="groups" value="2" checked>средства для ухода</label>
+        <label><input type="radio" name="groups" value="3">Аксессуары</label>
+      </fieldset>
+      <button class="btn" type="submit">Показать</button>
     </form>
-    <button class="btn" type="submit">Показать</button>
   </div>
   <div class="slider">
     <div class="item">
       <img src="img/shop-photo1.jpg" height="165" width="220"/>
       <p>Набор для путешествий
         «Baxter of California»</p>
+      <div class="buy">
+        <span class="price">2900 руб</span>
+        <a href="" class="btn">Купить</a>
+      </div>
     </div>
     <div class="item">
       <img src="img/shop-photo2.jpg" height="165" width="220"/>
       <p>Увлажняющий кондиционер
         «Baxter of California»</p>
+      <div class="buy">
+        <span class="price">750 руб</span>
+        <a href="" class="btn">Купить</a>
+      </div>
     </div>
     <div class="item">
       <img src="img/shop-photo3.jpg" height="165" width="220"/>
       <p>Гель для волос
         «SUAVECITO»</p>
+      <div class="buy">
+        <span class="price">290 руб</span>
+        <a href="" class="btn">Купить</a>
+      </div>
     </div>
     <div class="item">
       <img src="img/shop-photo4.jpg" height="165" width="220"/>
       <p>Глина для укладки волос
       «American crew»</p>
+      <div class="buy">
+        <span class="price">500 руб</span>
+        <a href="" class="btn">Купить</a>
+      </div>
     </div>
     <div class="item">
       <img src="img/shop-photo5.jpg" height="165" width="220"/>
       <p>Гель для волос
       «AMERICAN CREW»</p>
+      <div class="buy">
+        <span class="price">300 руб</span>
+        <a href="" class="btn">Купить</a>
+      </div>
     </div>
     <div class="item">
       <img src="img/shop-photo6.jpg" height="165" width="220"/>
       <p>Набор для бритья
       «Baxter of California»</p>
+      <div class="buy">
+        <span class="price">3900 руб</span>
+        <a href="" class="btn">Купить</a>
+      </div>
     </div>
   </div>
 </main>
