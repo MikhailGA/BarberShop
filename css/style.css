@@ -4,19 +4,57 @@
   clear: both;
 }
 
+body{
+  background: #000000 url("../img/page-bg.jpg") no-repeat center top;
+  margin: 0;
+  min-width: 960px;
+  font-family: 'PT Sans Narrow',"Arial", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
 .container{
   width: 960px;
   margin: 0 auto;
   padding: 0 10px;
 }
 
-body{
-  background: url("../img/page-bg.jpg") no-repeat 50% 3px;
-  /*color: white;*/
-}
-
 .main-header{
   margin-bottom: 60px;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.main-navigator ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.main-navigator li{
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 40px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.main-navigator a{
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 25px 20px;
+}
+
+.main-navigator a:hover{
+  background-color: #242424;
+}
+
+.user-block a{
+  line-height: 20px;
 }
 
 .main-header .main-navigator{
@@ -26,8 +64,37 @@ body{
 
 .main-header .user-block{
   float: right;
-  width: 140px;
-  /*padding: 20px 30px;*/
+  max-width: 140px;
+}
+
+.user-block .login{
+  position: relative;
+  padding: 25px 20px 25px 50px;
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.user-block .login:after{
+  position: absolute;
+  left:20px;
+  top:50%;
+  margin-top:-8px;
+  content: "";
+  width: 18px;
+  height: 16px;
+  background: url("../img/exit.png") no-repeat center top;
+  opacity: 0.3;
+}
+
+.user-block .login:hover{
+  background-color: #242424;
+}
+
+.user-block .login:hover::after{
+  opacity: 1;
 }
 
 .index-logo{
@@ -55,6 +122,11 @@ body{
 .index-content{
   background: url("../img/index-content-bg.jpg") repeat;
   padding: 50px 80px;
+  margin-bottom: 35px;
+}
+
+.index-content:last-child{
+  margin-bottom: 65px;
 }
 
 .index-content-left{
@@ -65,4 +137,27 @@ body{
 .index-content-right{
   float: right;
   width: 330px;
+}
+
+.main-footer{
+  padding-top: 60px;
+  padding-bottom: 40px;
+  background: url("../img/index-footer-bg.jpg");
+  color: white;
+}
+
+.footer-contacts{
+  width: 310px;
+  float: left;
+  margin-right: 90px;
+}
+
+.footer-social{
+  width: 140px;
+  float: left;
+}
+
+.footer-copyright{
+  width: 140px;
+  float: right;
 }
