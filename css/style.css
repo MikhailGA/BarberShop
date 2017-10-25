@@ -106,23 +106,64 @@ body{
 
 .features{
   margin-bottom: 80px;
-  color: white;
+  color: #f7f4f1;
 }
 
 .features .features-item{
   width: 300px;
   display: inline-block;
   margin-right: 20px;
+
+  text-align: center;
 }
 
 .features .features-item:last-child{
   margin-right: 0;
 }
 
+.features-name{
+  display: block;
+  position: relative;
+  padding-bottom: 35px;
+  margin-bottom: 30px;
+
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.features-name::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -10px;
+  width: 20px;
+  height: 20px;
+
+  background-color: #f7f4f1;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.features-item p{
+  margin:10px;
+  margin-bottom: 0;
+
+  font-size: 14px;
+  line-height: 24px;
+}
+
 .index-content{
-  background: url("../img/index-content-bg.jpg") repeat;
   padding: 50px 80px;
   margin-bottom: 35px;
+
+  color: #000000;
+
+  background: url("../img/index-delimiter.jpg.png") no-repeat center,
+              #f8f5f2 url("../img/index-content-bg.jpg") repeat;
 }
 
 .index-content:last-child{
@@ -131,19 +172,167 @@ body{
 
 .index-content-left{
   float: left;
-  width: 330px;
+  width: 380px;
 }
 
 .index-content-right{
   float: right;
-  width: 330px;
+  width: 300px;
+}
+
+.index-content-title{
+  display: block;
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-size: 30px;
+  line-height: 42px;
+  color:#000000;
+}
+
+.news-preview{
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.news-preview li{
+  margin-bottom: 30px;
+  padding-right: 35px;
+}
+
+.index-content p{
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.index-content time{
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: none;
+}
+
+.gallery{
+  position: relative;
+  height: 260px;
+}
+
+.gallery .gallery-prev{
+  position: absolute;
+  bottom: 0;
+  left:0;
+
+  width: 140px;
+}
+
+.gallery .gallery-next{
+  position: absolute;
+  bottom: 0;
+  right:0;
+
+  width: 140px;
+  margin-right: 0;
+}
+
+.gallery-content{
+  height: 164px;
+
+  margin: 0;
+
+  background-color: #cccccc;
+  border: 7px solid #ffffff;
+  /*-webkit-box-sizing: border-box;*/
+  /*-moz-box-sizing: border-box;*/
+  /*box-sizing: border-box;*/
+  /*overflow: hidden;*/
+}
+
+.gallery-content img{
+  width: 286px;
+  height: 164px;
+}
+
+.btn{
+  display: inline-block;
+  margin-right: 16px;
+  padding: 10px 35px;
+
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  font-family: 'PT Sans Narrow', "Arial", sans-serif;
+  text-align: center;
+  vertical-align: top;
+
+  background-color: #000000;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.btn:hover,
+.btn:active{
+  background-color: #663d15;
+}
+
+.btn.disabled,
+.btn:disabled{
+  cursor: default;
+  opacity: 0.5;
+}
+
+.btn.disabled:hover,
+.btn:disabled:hover{
+  background-color: #000000;
+}
+
+.appointment-form input{
+  width: 106px;
+  padding: 7px 15px;
+
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+
+  background-color: #f9f6f3;
+  outline: none;
+  border: 2px solid #000000;
+
+  color: #000000;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  font-family: 'PT Sans Narrow', "Arial", sans-serif;
+  text-transform: uppercase;
+}
+
+.appointment-form input:nth-child(2n){
+  margin-right: 0px;
+}
+
+.appointment-form .btn{
+  margin: 0;
+  clear: both;
+  display: block;
+  width: 100%;
 }
 
 .main-footer{
   padding-top: 60px;
   padding-bottom: 40px;
-  background: url("../img/index-footer-bg.jpg");
+  background: #252525 url("../img/index-footer-bg.jpg");
   color: white;
+}
+
+.main-footer a{
+  color: #ffffff;
 }
 
 .footer-contacts{
@@ -155,9 +344,54 @@ body{
 .footer-social{
   width: 140px;
   float: left;
+
+  font-size: 0px;
+}
+
+.footer-social p{
+  font-size: 14px;
+  text-align: center;
+}
+
+.footer-social .social-btn{
+  display: inline-block;
+
+  width: 43px;
+  height: 43px;
+  background-color: #000000;
+
+  margin-right: 5px;
+}
+
+.footer-social .social-btn:last-child{
+  margin-right: 0;
+}
+
+.social-btn-vk{
+  background: url("../img/VK.png") no-repeat center;
+}
+
+.social-btn-fb{
+  background: url("../img/FB.png") no-repeat center;
+}
+
+.social-btn-inst{
+  background: url("../img/INST.png") no-repeat center;
 }
 
 .footer-copyright{
   width: 140px;
   float: right;
+  text-align: center;
+}
+
+.footer-copyright a{
+  display: block;
+  width: 140px;
+
+  padding-left: 0;
+  padding-right:0;
+  margin-right: 0px;
+
+  text-align: center;
 }
