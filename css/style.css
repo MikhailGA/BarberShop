@@ -654,3 +654,179 @@ body{
 
   text-align: center;
 }
+
+/*===========Всплывающая форма==============*/
+.modal-content{
+  position: absolute;
+  top:120px;
+  left:50%;
+
+  width: 300px;
+  padding: 50px 80px;
+
+  color: #000000;
+  background: #f8f5f2 url("../img/index-content-bg.jpg") repeat;
+  -webkit-box-shadow:  0 30px 50px rgba(0,0,0,0.7);
+  -moz-box-shadow:  0 30px 50px rgba(0,0,0,0.7);
+  box-shadow:  0 30px 50px rgba(0,0,0,0.7);
+
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.modal-content-close{
+  position: absolute;
+  top: 0;
+  right: -34px;
+
+  width: 22px;
+  height: 22px;
+
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  background: none;
+
+  font-size: 0;
+}
+
+.modal-content-close::before,
+.modal-content-close::after{
+  content: "";
+  position: absolute;
+  top:10px;
+  left: 2px;
+
+  width: 19px;
+  height: 3px;
+  background-color: #d0d0d0;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+}
+
+.modal-content-close::before{
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.modal-content-close::after{
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.modal-content h2{
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-size: 30px;
+  line-height:42px;
+}
+
+.modal-content p{
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.modal-content .login-form{
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"]{
+  width: 236px;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  padding-right: 40px;
+
+  background-color: #f9f6f3;
+  border: 2px solid #000000;
+  outline: none;
+
+  color: #000000;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  font-family: 'PT Sans Narrow', "Arial", sans-serif;
+  text-transform: uppercase;
+}
+
+.login-form a{
+  float: right;
+
+  color: #000000;
+}
+
+.login-form .btn{
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.login-checkbox {
+  position: relative;
+
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.login-checkbox input[type="checkbox"]{
+  display: none;
+}
+
+.login-checkbox input[type="checkbox"]+
+  .checkbox-indicator{
+  position: absolute;
+  top:-3px;
+  left: 0;
+
+  width: 17px;
+  height: 17px;
+
+  border:2px solid #000000;
+}
+
+.login-checkbox input[type="checkbox"]:checked+
+.checkbox-indicator::before,
+.login-checkbox input[type="checkbox"]:checked+
+.checkbox-indicator::after{
+  content: "";
+  position: absolute;
+
+  top:8px;
+  left: 1px;
+
+  width: 15px;
+  height: 2px;
+
+  background-color: #000000;
+}
+
+.login-checkbox input[type="checkbox"]+
+.checkbox-indicator::before{
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.login-checkbox input[type="checkbox"]+
+.checkbox-indicator::after{
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/*==========================================*/
