@@ -660,6 +660,7 @@ body{
   position: absolute;
   top:120px;
   left:50%;
+  display: none;
 
   width: 300px;
   padding: 50px 80px;
@@ -830,3 +831,25 @@ body{
   transform: rotate(45deg);
 }
 /*==========================================*/
+
+.modal-content-map{
+  display: none;
+  position: fixed;
+  top:50%;
+  left:50%;
+
+  width: 766px;
+  height: 561px;
+
+  background-color: #e9e5dc;
+  border: 7px solid white;
+  -webkit-box-shadow:  0 30px 50px rgba(0,0,0,0.7);
+  -moz-box-shadow:  0 30px 50px rgba(0,0,0,0.7);
+  box-shadow:  0 30px 50px rgba(0,0,0,0.7);
+
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
