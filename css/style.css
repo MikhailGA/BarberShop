@@ -853,3 +853,7 @@ body{
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+
+.show-modal-content{
+  display: block;
+}
