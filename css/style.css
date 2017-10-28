@@ -854,6 +854,11 @@ body{
   transform: translate(-50%, -50%);
 }
 
+.yandex-map-link{
+  width: 766px;
+  height: 561px;
+}
+
 .show-modal-content{
   display: block;
 }
