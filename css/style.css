@@ -857,3 +857,7 @@ body{
 .show-modal-content{
   display: block;
 }
+
+.hide-modal-content{
+  display: none;
+}
