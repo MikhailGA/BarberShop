@@ -4,10 +4,23 @@ var map_link = document.querySelector(".modal_map");
 var popup = document.querySelector(".modal-content");
 var popup_map = document.querySelector(".modal-content-map");
 
+var form = popup.querySelector("form");
+var login = popup.querySelector("[name=login]");
+var password = popup.querySelector("[name=password]");
+
 var btn_close = document.querySelectorAll(".modal-content-close");
+
+form.addEventListener("submit",function (event) {
+    if (!login.value || !password.value){
+        event.preventDefault();
+        alert("Не указан логин или пароль!!!");
+    }
+    localStorage.setItem("login",login.value);
+});
 
 link.addEventListener("click",function (event) {
     modal_content_show(event, popup);
+    login.value = localStorage.getItem(("login"));
 });
 
 map_link.addEventListener("click",function (event) {
@@ -26,6 +39,7 @@ function modal_content_show(event, selector) {
     event.preventDefault();
     selector.classList.remove("hide-modal-content");
     selector.classList.add("show-modal-content");
+    login.focus();
 }
 
 function modal_content_hide(event) {
